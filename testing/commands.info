@@ -1,0 +1,47 @@
+INFO for the ctf, by Alex Elko
+
+in syntax guides, optional content is placed in (), required inputs are put in {}
+
+
+Info about general Linux commands:
+
+cd : cd {dir_name} : changes directory, you can also put a chain of directories (e.g. cd Documents/English/Essays/)
+
+ls : ls (-a , -las) (dir, current if blank) : lists items of directory, common flags are -a which lists all files even hidden ones, and
+	-l which lists permisson, file size, and access information besides filenames.
+
+pwd : pwd : prints current directory and tree of directories leading to current directory (e.g. pwd -> /home/alex/Documents/)
+
+cat : cat {filename} : prints out the content of a file, can be garbled if the file doesn't directly tranlate to text, like a photo or
+	mp3 file. 
+
+echo : echo {some text} : prints given text to output, unless used in conjunction wit > or >> operators (which will be discussed later).
+
+man : man {command} : you can use the man command to pull up a man page for a certain command, a man page is a help page that explains
+	how to use the command. Most commands also have to option to do: {command} --help, which will display a shortened version of a
+	man page.
+
+grep : grep {some text} : searches for given text, useful in conjunction with piping (| symbol) to search through output of a command
+	like cat or ls.
+
+tr : tr (flags) {item} {replaced item} : tr is the translate, or replace tool. together with grep they create the normal
+	ctl+f find and replace tool you see in something like a word doc. tr takes the first input and replaces all occurrances of it
+	with the second input. there are some flags but refernce the man 
+	or help page for them 
+
+mv : mv {file} {new file} : the move command takes {file} and transfers its data to a file under the name of {news file}, and 
+	{file} is deleted.
+
+cp : cp {file} {new file} : the copy command takes {file} and copies its data to a new file under the name of {new file}, the original
+	file is preserved, unlike mv.
+
+rm : rm (flags, normally -R) {file} : the remove command removes the given file, when the -R flag is used with the given input as a 
+	folder, the folder and its content is recursively deleted.
+
+redirect, > and >> : {command} > {file} or {command} >> {file} : the redirect command takes the output from a command and redirects it into a file
+	instead of printing it to the terminal. the > option writes, but overrites any content already in the file, and >> appends the 
+	data to the file.
+
+pipe, | : {command 1} | {command 2} : the pipe command directs the output of one command into the input of another, this can be
+	chained multiple times.
+
